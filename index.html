@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose & Fleur - Fleuriste</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #fff9fb;
+            color: #4a3e3d;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #fce4ec !important;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #880e4f !important;
+            font-weight: bold;
+        }
+
+        .section-title {
+            color: #c2185b;
+            border-bottom: 2px solid #f8bbd0;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            border: 1px solid #f8bbd0;
+            border-radius: 12px;
+            background-color: #ffffff;
+        }
+
+        .btn-pink {
+            background-color: #d81b60;
+            color: white;
+            border: none;
+        }
+
+        .btn-pink:hover {
+            background-color: #ad1457;
+            color: white;
+        }
+
+        footer {
+            background-color: #fce4ec;
+            color: #880e4f;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">🌸 Rose & Fleur</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fleurs">Nos Fleurs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#commande">Commander</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home" class="container text-center my-5">
+        <h1 style="color: #c2185b;">Bienvenue chez Rose & Fleur</h1>
+        <p class="lead">Vente de fleurs fraîches et bouquets personnalisés 🌺</p>
+    </div>
+
+    <div class="container">
+
+        <section id="fleurs" class="mb-5">
+            <h2 class="section-title">Catalogue des Fleurs</h2>
+            <div class="card p-3 shadow-sm">
+                <table class="table table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>#</th>
+                            <th>Nom de la Fleur</th>
+                            <th>Couleur</th>
+                            <th>Prix (DH)</th>
+                            <th>Disponibilité</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Roses Rouges</td>
+                            <td>Rouge</td>
+                            <td>150 DH</td>
+                            <td><span class="badge bg-success">En Stock</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Tulipes Blanches</td>
+                            <td>Blanc</td>
+                            <td>120 DH</td>
+                            <td><span class="badge bg-success">En Stock</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Orchidées Rose</td>
+                            <td>Rose</td>
+                            <td>200 DH</td>
+                            <td><span class="badge bg-warning text-dark">Rupture temporaire</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="commande" class="mb-5">
+            <h2 class="section-title">Commander un Bouquet</h2>
+            <div class="card p-4 shadow-sm">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nom complet</label>
+                        <input type="text" class="form-control" placeholder="Entrez votre nom" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Téléphone</label>
+                        <input type="tel" class="form-control" placeholder="06 00 00 00 00" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Type de bouquet souhaité</label>
+                        <select class="form-select">
+                            <option>Bouquet de Roses</option>
+                            <option>Bouquet de Tulipes</option>
+                            <option>Mélange de Fleurs</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message / Adresse de livraison</label>
+                        <textarea class="form-control" rows="3" placeholder="Votre adresse ou mot doux..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-pink w-100">Passer la commande 🌸</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="text-center">
+        <p class="m-0">© 2026 Rose & Fleur - Tous droits réservés 🌺</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
